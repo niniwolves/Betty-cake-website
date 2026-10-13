@@ -1,0 +1,722 @@
+:root {
+    --cream: #fff8f0;
+    --cream-dark: #f5e8da;
+    --white: #ffffff;
+    --brown: #55372f;
+    --brown-light: #806057;
+    --burgundy: #963f54;
+    --pink: #f3d5d8;
+    --pink-light: #fcebed;
+    --gold: #c69a54;
+    --text: #49352f;
+    --muted: #8c7770;
+    --border: #eadbd0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background: rgba(255, 248, 240, 0.97);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+}
+
+.brand-icon {
+    color: var(--burgundy);
+    font-size: 34px;
+}
+
+.brand-name {
+    color: var(--burgundy);
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.brand-dot,
+.footer-brand span {
+    color: var(--gold);
+}
+
+.brand-name small {
+    display: block;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    font-size: 13px;
+    color: var(--brown);
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: var(--burgundy);
+}
+
+.languages {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.languages button {
+    min-width: 39px;
+    min-height: 39px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--brown);
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.languages button[aria-pressed="true"] {
+    background: var(--burgundy);
+    color: white;
+    border-color: var(--burgundy);
+}
+
+.hero {
+    padding: 75px 10%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 50px;
+    min-height: 530px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 540px;
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+}
+
+.hero h1 {
+    margin: 22px 0;
+    color: var(--brown);
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.14;
+    font-weight: normal;
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 440px;
+    color: var(--brown-light);
+    font-size: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+    border-radius: 30px;
+    background: var(--burgundy);
+    color: white;
+    font-size: 13px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background: var(--brown);
+}
+
+.hero-note {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.hero-note span:first-child {
+    color: var(--burgundy);
+    font-size: 20px;
+}
+
+.hero-art {
+    position: relative;
+    min-height: 360px;
+    border-radius: 48% 48% 35% 35%;
+    background: var(--pink-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sparkle {
+    position: absolute;
+    color: var(--gold);
+    font-size: 32px;
+}
+
+.sparkle-one {
+    top: 50px;
+    left: 55px;
+}
+
+.sparkle-two {
+    right: 45px;
+    bottom: 90px;
+}
+
+.art-heart {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    color: var(--burgundy);
+    font-size: 40px;
+}
+
+.cake-illustration {
+    width: 220px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.cake-top {
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #f7dce0;
+    background: #fff0dc;
+    position: relative;
+    z-index: 2;
+}
+
+.cake-body {
+    height: 110px;
+    margin-top: -20px;
+    border-radius: 12px 12px 35px 35px;
+    background: #9d5a49;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-body::before {
+    content: "";
+    display: block;
+    height: 25px;
+    background: #fce6e4;
+    border-radius: 0 0 50% 50%;
+}
+
+.berry {
+    width: 19px;
+    height: 24px;
+    position: absolute;
+    top: -10px;
+    background: #a93e50;
+    border-radius: 60% 60% 50% 50%;
+}
+
+.berry-one {
+    left: 58px;
+    transform: rotate(-20deg);
+}
+
+.berry-two {
+    left: 94px;
+    top: -17px;
+}
+
+.berry-three {
+    right: 55px;
+    transform: rotate(20deg);
+}
+
+.cream {
+    position: absolute;
+    top: 45px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f8e7cf;
+}
+
+.cream-one {
+    left: 35px;
+}
+
+.cream-two {
+    left: 95px;
+}
+
+.cream-three {
+    right: 35px;
+}
+
+.cake-plate {
+    width: 260px;
+    height: 18px;
+    margin: 0 0 0 -20px;
+    background: #fff;
+    border: 2px solid #edd5d2;
+    border-radius: 50%;
+}
+
+.art-caption {
+    margin-top: 18px;
+    color: var(--burgundy);
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.section {
+    padding: 85px 9%;
+}
+
+.cakes-section {
+    background: var(--white);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2,
+.birthday-content h2,
+.about-content h2,
+.contact-section h2 {
+    margin: 12px 0;
+    color: var(--brown);
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.cake-card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--cream);
+    transition: transform 0.25s;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
+}
+
+.cake-art {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cake-chocolate {
+    background: #f3e0d4;
+}
+
+.cake-pineapple {
+    background: #fbefcf;
+}
+
+.cake-cheese {
+    background: #f5dfe2;
+}
+
+.cake-yogurt {
+    background: #e9ead7;
+}
+
+.cake-emoji {
+    font-size: 65px;
+    filter: drop-shadow(0 6px 4px rgba(70, 40, 30, 0.1));
+}
+
+.floating-heart {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    color: var(--burgundy);
+    font-size: 24px;
+}
+
+.cake-info {
+    padding: 20px;
+    position: relative;
+}
+
+.cake-number {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.cake-info h3 {
+    margin: 6px 0;
+    color: var(--brown);
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.cake-info p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.birthday-section {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: 45px;
+    background: var(--pink-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.birthday-decoration {
+    position: absolute;
+    top: 10px;
+    right: 8%;
+    color: #e7c0c6;
+    font-size: 90px;
+}
+
+.birthday-content h2 {
+    max-width: 500px;
+}
+
+.birthday-content p,
+.about-content p,
+.contact-section > p {
+    color: var(--brown-light);
+    font-size: 14px;
+}
+
+.birthday-art {
+    min-height: 240px;
+    border-radius: 30px;
+    background: #fff8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.birthday-cake {
+    font-size: 100px;
+}
+
+.birthday-star,
+.birthday-heart {
+    position: absolute;
+    color: var(--gold);
+    font-size: 32px;
+}
+
+.birthday-star {
+    top: 20px;
+    left: 35px;
+}
+
+.birthday-heart {
+    top: 45px;
+    right: 35px;
+    color: var(--burgundy);
+}
+
+.birthday-art p {
+    color: var(--burgundy);
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 70px;
+    background: var(--white);
+}
+
+.about-art {
+    min-height: 290px;
+    border-radius: 45% 45% 30px 30px;
+    background: #f6e8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-cupcake {
+    font-size: 110px;
+}
+
+.about-heart,
+.about-flower {
+    position: absolute;
+    font-size: 35px;
+    color: var(--burgundy);
+}
+
+.about-heart {
+    top: 40px;
+    left: 45px;
+}
+
+.about-flower {
+    right: 40px;
+    bottom: 40px;
+    color: var(--gold);
+}
+
+.about-signature {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--burgundy);
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.contact-section {
+    text-align: center;
+    background: var(--cream);
+}
+
+.contact-section > p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.coming-soon {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 18px;
+    border: 1px solid var(--gold);
+    border-radius: 30px;
+    color: var(--burgundy);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.footer {
+    padding: 35px 7%;
+    text-align: center;
+    background: var(--brown);
+    color: #f9e9df;
+}
+
+.footer-brand {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.footer p {
+    margin: 8px 0 15px;
+    font-size: 12px;
+}
+
+.footer small {
+    color: #d9c3b9;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .cake-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        gap: 12px;
+    }
+
+    .brand-name {
+        font-size: 23px;
+    }
+
+    .brand-icon {
+        font-size: 28px;
+    }
+
+    .nav {
+        gap: 13px;
+    }
+
+    .nav a {
+        font-size: 11px;
+    }
+
+    .languages button {
+        min-width: 34px;
+        min-height: 34px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-art {
+        min-height: 310px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .cake-grid {
+        gap: 12px;
+    }
+
+    .cake-art {
+        height: 135px;
+    }
+
+    .cake-emoji {
+        font-size: 52px;
+    }
+
+    .cake-info {
+        padding: 14px;
+    }
+
+    .cake-info h3 {
+        font-size: 17px;
+    }
+
+    .birthday-section,
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .birthday-art {
+        min-height: 220px;
+    }
+
+    .about-art {
+        min-height: 230px;
+    }
+
+    .about-cupcake {
+        font-size: 90px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
