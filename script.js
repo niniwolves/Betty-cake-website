@@ -1,186 +1,238 @@
 const translations = {
-    es: {
-        pageTitle: "Betty | Tortas Caseras",
-        description: "Descubre las tortas caseras de Betty.",
-        brandTag: "TORTAS CASERAS",
-        navHome: "Inicio",
-        navCakes: "Tortas",
-        navAbout: "Sobre Betty",
-        navContact: "Contacto",
+  es: {
+    brandTag: "TORTAS CASERAS",
 
-        heroEyebrow: "HECHAS CON AMOR ♡",
-        heroTitle: "Un poquito de dulzura para tus momentos especiales.",
-        heroText: "Tortas caseras para compartir sonrisas, celebrar cumpleaños y crear recuerdos bonitos.",
-        heroButton: "Descubre nuestras tortas",
-        heroNote: "Un detalle dulce, hecho con cariño.",
-        artCaption: "Hecho con amor",
+    navHome: "Inicio",
+    navCakes: "Nuestras tortas",
+    navBirthday: "Cumpleaños",
+    navAbout: "Sobre Betty",
 
-        cakesEyebrow: "UN MUNDO DE SABORES",
-        cakesTitle: "Nuestras tortas",
-        cakesText: "Un sabor especial para cada ocasión.",
+    heroEyebrow: "HECHAS CON AMOR",
+    heroTitle: "Un poquito de dulzura para tus momentos especiales.",
+    heroText: "Tortas caseras para compartir sonrisas, celebrar cumpleaños y crear recuerdos bonitos.",
+    heroButton: "Descubre nuestras tortas",
+    heroNote: "Un detalle dulce, hecho con cariño.",
 
-        chocolateTitle: "Chocolate",
-        chocolateText: "Un clásico lleno de sabor.",
-        pineappleTitle: "Piña",
-        pineappleText: "Un toque dulce y frutal.",
-        cheeseTitle: "Cheesecake",
-        cheeseText: "Cremoso y delicioso.",
-        yogurtTitle: "Yogur",
-        yogurtText: "Suave y delicado.",
-        flavorNote: "Sabores e ilustraciones de ejemplo, pendientes de confirmar.",
+    imageLabelTitle: "Momentos dulces",
+    imageLabelText: "Hechos con cariño",
 
-        birthdayEyebrow: "MOMENTOS PARA CELEBRAR",
-        birthdayTitle: "Cumpleaños llenos de dulzura",
-        birthdayText: "Los pequeños momentos merecen grandes sonrisas. Una torta puede formar parte de un recuerdo inolvidable.",
-        birthdayCaption: "¡Que comience la celebración!",
+    cakesEyebrow: "UN MUNDO DE SABORES",
+    cakesTitle: "Nuestras tortas",
+    cakesText: "Un sabor especial para cada ocasión.",
 
-        aboutEyebrow: "CON CARIÑO",
-        aboutTitle: "Conoce a Betty",
-        aboutText: "Detrás de cada torta hay dedicación y cariño. Muy pronto podrás conocer más sobre Betty y sus creaciones.",
-        aboutSignature: "Con cariño, Betty ♡",
+    chocolateTitle: "Chocolate",
+    chocolateText: "Un clásico lleno de sabor.",
 
-        contactEyebrow: "UN MOMENTO DULCE TE ESPERA",
-        contactTitle: "¿Celebramos algo especial?",
-        contactText: "Pronto compartiremos más información sobre los pedidos.",
-        comingSoon: "MÁS INFORMACIÓN PRÓXIMAMENTE",
+    pineappleTitle: "Piña",
+    pineappleText: "Un toque dulce y frutal.",
 
-        footerText: "Un poquito de dulzura, un montón de amor.",
-        rights: "Todos los derechos reservados."
-    },
+    cheeseTitle: "Cheesecake",
+    cheeseText: "Cremoso y delicioso.",
 
-    ja: {
-        pageTitle: "Betty｜手作りケーキ",
-        description: "Bettyの手作りケーキをご紹介します。",
-        brandTag: "手作りケーキ",
-        navHome: "ホーム",
-        navCakes: "ケーキ",
-        navAbout: "Bettyについて",
-        navContact: "お問い合わせ",
+    yogurtTitle: "Yogur",
+    yogurtText: "Suave y delicado.",
 
-        heroEyebrow: "愛情を込めて ♡",
-        heroTitle: "特別なひとときに、甘い幸せを。",
-        heroText: "笑顔を分かち合い、誕生日を祝い、素敵な思い出を作るための手作りケーキ。",
-        heroButton: "ケーキを見る",
-        heroNote: "心を込めた、甘い贈り物。",
-        artCaption: "愛情を込めて",
+    cakeDetail: "Hecho con cariño ♡",
 
-        cakesEyebrow: "いろいろな味わい",
-        cakesTitle: "ケーキのご紹介",
-        cakesText: "さまざまなシーンにぴったりのケーキ。",
+    flavorNote: "Fotografías ilustrativas. Los sabores están pendientes de confirmar.",
 
-        chocolateTitle: "チョコレート",
-        chocolateText: "定番のおいしさ。",
-        pineappleTitle: "パイナップル",
-        pineappleText: "甘くてフルーティー。",
-        cheeseTitle: "チーズケーキ",
-        cheeseText: "なめらかでおいしい味わい。",
-        yogurtTitle: "ヨーグルト",
-        yogurtText: "やさしく繊細な味わい。",
-        flavorNote: "味の種類とイラストは仮のものです。Bettyへの確認が必要です。",
+    birthdayEyebrow: "MOMENTOS PARA CELEBRAR",
+    birthdayTitle: "Cumpleaños llenos de dulzura",
+    birthdayText: "Los pequeños momentos merecen grandes sonrisas. Una torta puede formar parte de un recuerdo inolvidable.",
+    birthdayButton: "Conoce más",
 
-        birthdayEyebrow: "お祝いのひととき",
-        birthdayTitle: "甘くて楽しい誕生日",
-        birthdayText: "小さな瞬間にも大きな笑顔を。ケーキと一緒に忘れられない思い出を作りましょう。",
-        birthdayCaption: "お祝いを始めましょう！",
+    aboutEyebrow: "CON CARIÑO",
+    aboutTitle: "Conoce a Betty",
+    aboutText: "Detrás de cada torta hay dedicación y cariño. Muy pronto podrás conocer más sobre Betty y sus creaciones.",
+    aboutSignature: "Con cariño, Betty ♡",
 
-        aboutEyebrow: "心を込めて",
-        aboutTitle: "Bettyについて",
-        aboutText: "ひとつひとつのケーキに、心を込めて。Bettyとケーキについての詳細は近日公開予定です。",
-        aboutSignature: "心を込めて、Bettyより ♡",
+    contactEyebrow: "UN MOMENTO DULCE TE ESPERA",
+    contactTitle: "¿Celebramos algo especial?",
+    contactText: "Pronto compartiremos más información sobre los pedidos.",
+    comingSoon: "MÁS INFORMACIÓN PRÓXIMAMENTE",
 
-        contactEyebrow: "甘いひとときを",
-        contactTitle: "特別な日をお祝いしませんか？",
-        contactText: "ご注文方法については、近日中にご案内します。",
-        comingSoon: "詳細は近日公開",
+    footerText: "Un poquito de dulzura, un montón de amor.",
+    rights: "Todos los derechos reservados.",
+    footerNote: "Las fotografías son ilustrativas y no representan necesariamente los productos de Betty."
+  },
 
-        footerText: "少しの甘さと、たくさんの愛を。",
-        rights: "無断転載を禁じます。"
-    },
+  ja: {
+    brandTag: "手作りケーキ",
 
-    en: {
-        pageTitle: "Betty | Homemade Cakes",
-        description: "Discover Betty's homemade cakes.",
-        brandTag: "HOMEMADE CAKES",
-        navHome: "Home",
-        navCakes: "Cakes",
-        navAbout: "About Betty",
-        navContact: "Contact",
+    navHome: "ホーム",
+    navCakes: "ケーキ",
+    navBirthday: "誕生日",
+    navAbout: "Bettyについて",
 
-        heroEyebrow: "MADE WITH LOVE ♡",
-        heroTitle: "A little sweetness for your special moments.",
-        heroText: "Homemade cakes for sharing smiles, celebrating birthdays, and creating beautiful memories.",
-        heroButton: "Discover our cakes",
-        heroNote: "A sweet little detail, made with care.",
-        artCaption: "Made with love",
+    heroEyebrow: "愛情を込めて",
+    heroTitle: "大切なひとときに、甘い幸せを。",
+    heroText: "笑顔を分かち合い、誕生日を祝い、素敵な思い出を彩る手作りケーキ。",
+    heroButton: "ケーキを見る",
+    heroNote: "心を込めた、甘い贈り物。",
 
-        cakesEyebrow: "A WORLD OF FLAVORS",
-        cakesTitle: "Our Cakes",
-        cakesText: "A special flavor for every occasion.",
+    imageLabelTitle: "甘いひととき",
+    imageLabelText: "心を込めて",
 
-        chocolateTitle: "Chocolate",
-        chocolateText: "A timeless classic.",
-        pineappleTitle: "Pineapple",
-        pineappleText: "A sweet and fruity touch.",
-        cheeseTitle: "Cheesecake",
-        cheeseText: "Creamy and delicious.",
-        yogurtTitle: "Yogurt",
-        yogurtText: "Light and delicate.",
-        flavorNote: "Sample flavors and illustrations; confirmation is still needed.",
+    cakesEyebrow: "いろいろな味わい",
+    cakesTitle: "ケーキのご紹介",
+    cakesText: "さまざまなシーンにぴったりの味。",
 
-        birthdayEyebrow: "MOMENTS TO CELEBRATE",
-        birthdayTitle: "Birthdays full of sweetness",
-        birthdayText: "Little moments deserve big smiles. A cake can be part of a wonderful memory.",
-        birthdayCaption: "Let the celebration begin!",
+    chocolateTitle: "チョコレート",
+    chocolateText: "定番のおいしさ。",
 
-        aboutEyebrow: "MADE WITH CARE",
-        aboutTitle: "Meet Betty",
-        aboutText: "Every cake is made with care and dedication. More about Betty and her creations will be shared soon.",
-        aboutSignature: "With love, Betty ♡",
+    pineappleTitle: "パイナップル",
+    pineappleText: "フルーティーな甘さ。",
 
-        contactEyebrow: "A SWEET MOMENT AWAITS",
-        contactTitle: "Celebrating something special?",
-        contactText: "More information about ordering will be available soon.",
-        comingSoon: "MORE INFORMATION COMING SOON",
+    cheeseTitle: "チーズケーキ",
+    cheeseText: "なめらかでクリーミー。",
 
-        footerText: "A little sweetness, a whole lot of love.",
-        rights: "All rights reserved."
-    }
+    yogurtTitle: "ヨーグルト",
+    yogurtText: "軽やかでやさしい味。",
+
+    cakeDetail: "心を込めて ♡",
+
+    flavorNote: "写真はイメージです。販売する味は確認中です。",
+
+    birthdayEyebrow: "お祝いのひととき",
+    birthdayTitle: "誕生日に甘い幸せを",
+    birthdayText: "小さな瞬間にも大きな笑顔を。ケーキが忘れられない思い出の一部になります。",
+    birthdayButton: "詳しく見る",
+
+    aboutEyebrow: "心を込めて",
+    aboutTitle: "Bettyについて",
+    aboutText: "一つひとつのケーキに込められた思い。Bettyとケーキについて、これから少しずつご紹介します。",
+    aboutSignature: "心を込めて、Bettyより ♡",
+
+    contactEyebrow: "甘いひとときを",
+    contactTitle: "特別な日をお祝いしませんか？",
+    contactText: "ご注文についての詳細は、準備ができ次第お知らせします。",
+    comingSoon: "詳細は近日公開",
+
+    footerText: "少しの甘さと、たくさんの愛を。",
+    rights: "無断転載を禁じます。",
+    footerNote: "写真はイメージであり、Bettyの商品とは異なる場合があります。"
+  },
+
+  en: {
+    brandTag: "HOMEMADE CAKES",
+
+    navHome: "Home",
+    navCakes: "Our Cakes",
+    navBirthday: "Birthdays",
+    navAbout: "About Betty",
+
+    heroEyebrow: "MADE WITH LOVE",
+    heroTitle: "A little sweetness for your special moments.",
+    heroText: "Homemade cakes to share smiles, celebrate birthdays, and create lovely memories.",
+    heroButton: "Explore Our Cakes",
+    heroNote: "A sweet little detail, made with care.",
+
+    imageLabelTitle: "Sweet Moments",
+    imageLabelText: "Made with care",
+
+    cakesEyebrow: "A WORLD OF FLAVORS",
+    cakesTitle: "Our Cakes",
+    cakesText: "A special flavor for every occasion.",
+
+    chocolateTitle: "Chocolate",
+    chocolateText: "A timeless classic.",
+
+    pineappleTitle: "Pineapple",
+    pineappleText: "A sweet fruity touch.",
+
+    cheeseTitle: "Cheesecake",
+    cheeseText: "Creamy and delicious.",
+
+    yogurtTitle: "Yogurt",
+    yogurtText: "Light and delicate.",
+
+    cakeDetail: "Made with care ♡",
+
+    flavorNote: "Photos are illustrative. Available flavors are yet to be confirmed.",
+
+    birthdayEyebrow: "MOMENTS TO CELEBRATE",
+    birthdayTitle: "Birthdays Filled with Sweetness",
+    birthdayText: "Little moments deserve big smiles. A cake can become part of an unforgettable memory.",
+    birthdayButton: "Learn More",
+
+    aboutEyebrow: "MADE WITH CARE",
+    aboutTitle: "Meet Betty",
+    aboutText: "Behind every cake is dedication and care. Soon, you will learn more about Betty and her creations.",
+    aboutSignature: "With love, Betty ♡",
+
+    contactEyebrow: "A SWEET MOMENT AWAITS",
+    contactTitle: "Celebrating Something Special?",
+    contactText: "More information about orders will be available soon.",
+    comingSoon: "MORE INFORMATION COMING SOON",
+
+    footerText: "A little sweetness, a whole lot of love.",
+    rights: "All rights reserved.",
+    footerNote: "Photos are illustrative and may not represent Betty's actual products."
+  }
 };
 
 
 function setLanguage(language) {
-    const selected = translations[language];
+  const selectedLanguage = translations[language];
 
-    if (!selected) {
-        return;
+  if (!selectedLanguage) {
+    return;
+  }
+
+  document.documentElement.lang = language;
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    const translatedText = selectedLanguage[key];
+
+    if (translatedText !== undefined) {
+      element.textContent = translatedText;
     }
+  });
 
-    document.documentElement.lang = language;
-    document.title = selected.pageTitle;
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    const isActive = button.dataset.lang === language;
 
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const key = element.dataset.i18n;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
 
-        if (Object.prototype.hasOwnProperty.call(selected, key)) {
-            element.textContent = selected[key];
-        }
-    });
+  const pageTitles = {
+    es: "Betty | Tortas Caseras",
+    ja: "Betty | 手作りケーキ",
+    en: "Betty | Homemade Cakes"
+  };
 
-    document.querySelectorAll("[data-lang]").forEach((button) => {
-        const isSelected = button.dataset.lang === language;
-        button.setAttribute("aria-pressed", String(isSelected));
-    });
+  document.title = pageTitles[language];
+
+  try {
+    localStorage.setItem("bettyLanguage", language);
+  } catch (error) {
+    // The website still works if local storage is unavailable.
+  }
 }
 
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
-    button.addEventListener("click", () => {
-        setLanguage(button.dataset.lang);
-    });
+  button.addEventListener("click", () => {
+    setLanguage(button.dataset.lang);
+  });
 });
 
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
-setLanguage("es");
+
+let savedLanguage = "es";
+
+try {
+  const storedLanguage = localStorage.getItem("bettyLanguage");
+
+  if (storedLanguage && translations[storedLanguage]) {
+    savedLanguage = storedLanguage;
+  }
+} catch (error) {
+  // Spanish remains the default language.
+}
+
+setLanguage(savedLanguage);
