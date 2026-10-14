@@ -1,227 +1,319 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BETTY | Tortas Caseras</title>
+  <meta name="description"
+        content="Descubre las tortas caseras de Betty, preparadas para acompañar tus momentos especiales.">
 
-    <meta name="description"
-          content="Descubre las deliciosas tortas caseras de Betty, hechas con amor para tus momentos especiales.">
+  <meta name="theme-color" content="#fff8f0">
 
-    <link rel="stylesheet" href="style.css">
+  <title>Betty | Tortas Caseras</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            BETTY<span>.</span>
-            <small>TORTAS CASERAS</small>
+<header class="header">
+  <a href="#inicio" class="brand" aria-label="Betty, inicio">
+    <span class="brand-icon">♡</span>
+    <span class="brand-name">
+      Betty<span class="brand-dot">.</span>
+      <small data-i18n="brandTag">TORTAS CASERAS</small>
+    </span>
+  </a>
+
+  <nav class="nav" id="mainNav">
+    <a href="#inicio" data-i18n="navHome">Inicio</a>
+    <a href="#tortas" data-i18n="navCakes">Nuestras tortas</a>
+    <a href="#cumpleanos" data-i18n="navBirthday">Cumpleaños</a>
+    <a href="#betty" data-i18n="navAbout">Sobre Betty</a>
+  </nav>
+
+  <div class="languages" aria-label="Language selection">
+    <button type="button" data-lang="es" aria-pressed="true">ES</button>
+    <button type="button" data-lang="ja" aria-pressed="false">JP</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+
+    <div class="hero-content">
+      <span class="eyebrow" data-i18n="heroEyebrow">
+        HECHAS CON AMOR
+      </span>
+
+      <h1 data-i18n="heroTitle">
+        Un poquito de dulzura para tus momentos especiales.
+      </h1>
+
+      <p data-i18n="heroText">
+        Tortas caseras para compartir sonrisas,
+        celebrar cumpleaños y crear recuerdos bonitos.
+      </p>
+
+      <a href="#tortas" class="button" data-i18n="heroButton">
+        Descubre nuestras tortas
+      </a>
+
+      <div class="hero-note">
+        <span>♡</span>
+        <span data-i18n="heroNote">
+          Un detalle dulce, hecho con cariño.
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85"
+        alt="Pastel decorado de chocolate"
+      >
+
+      <div class="image-label">
+        <span>♡</span>
+        <div>
+          <strong data-i18n="imageLabelTitle">Momentos dulces</strong>
+          <small data-i18n="imageLabelText">Hechos con cariño</small>
+        </div>
+      </div>
+
+      <span class="hero-decoration decoration-one">✿</span>
+      <span class="hero-decoration decoration-two">✧</span>
+    </div>
+
+  </section>
+
+
+  <!-- CAKES -->
+  <section class="section cakes-section" id="tortas">
+
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="cakesEyebrow">
+        UN MUNDO DE SABORES
+      </span>
+
+      <h2 data-i18n="cakesTitle">Nuestras tortas</h2>
+
+      <p data-i18n="cakesText">
+        Un sabor especial para cada ocasión.
+      </p>
+    </div>
+
+    <div class="cake-grid">
+
+      <article class="cake-card">
+        <div class="cake-image">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+            alt="Pastel de chocolate"
+            loading="lazy"
+          >
+          <span class="cake-number">01</span>
         </div>
 
-        <nav>
-            <a href="#inicio" data-i18n="nav-home">Inicio</a>
-            <a href="#tortas" data-i18n="nav-cakes">Tortas</a>
-            <a href="#sobre-betty" data-i18n="nav-about">Sobre Betty</a>
-            <a href="#pedidos" data-i18n="nav-order">Pedidos</a>
-        </nav>
-
-        <div class="languages">
-            <button type="button" data-lang="es" aria-pressed="true">ES</button>
-            <button type="button" data-lang="ja" aria-pressed="false">JP</button>
-            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <div class="cake-info">
+          <h3 data-i18n="chocolateTitle">Chocolate</h3>
+          <p data-i18n="chocolateText">Un clásico lleno de sabor.</p>
+          <span class="cake-detail" data-i18n="cakeDetail">
+            Hecho con cariño ♡
+          </span>
         </div>
-    </header>
+      </article>
 
 
-    <!-- HERO -->
-    <main>
-        <section class="hero" id="inicio">
+      <article class="cake-card">
+        <div class="cake-image">
+          <img
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+            alt="Pastel decorado con frutas"
+            loading="lazy"
+          >
+          <span class="cake-number">02</span>
+        </div>
 
-            <div class="hero-text">
-                <p class="eyebrow" data-i18n="hero-label">
-                    HECHAS CON AMOR
-                </p>
-
-                <h1 data-i18n="hero-title">
-                    Un dulce momento,
-                    un recuerdo especial.
-                </h1>
-
-                <p class="hero-description" data-i18n="hero-description">
-                    Tortas caseras preparadas con cariño
-                    para celebrar los momentos más bonitos de la vida.
-                </p>
-
-                <a href="#tortas" class="button"
-                   data-i18n="hero-button">
-                    Descubre nuestras tortas
-                </a>
-            </div>
-
-            <div class="hero-image" role="img"
-                 aria-label="Espacio reservado para una foto de las tortas de Betty">
-                <span>♡</span>
-                <p>Un toque dulce para cada ocasión</p>
-            </div>
-
-        </section>
+        <div class="cake-info">
+          <h3 data-i18n="pineappleTitle">Piña</h3>
+          <p data-i18n="pineappleText">Un toque dulce y frutal.</p>
+          <span class="cake-detail" data-i18n="cakeDetail">
+            Hecho con cariño ♡
+          </span>
+        </div>
+      </article>
 
 
-        <!-- CAKES -->
-        <section class="cakes section" id="tortas">
+      <article class="cake-card">
+        <div class="cake-image">
+          <img
+            src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80"
+            alt="Pastel cremoso"
+            loading="lazy"
+          >
+          <span class="cake-number">03</span>
+        </div>
 
-            <div class="section-heading">
-                <p class="eyebrow" data-i18n="cakes-label">
-                    ALGO DELICIOSO TE ESPERA
-                </p>
-
-                <h2 data-i18n="cakes-title">
-                    Nuestras tortas
-                </h2>
-
-                <p data-i18n="cakes-description">
-                    Descubre sabores para disfrutar y compartir.
-                </p>
-            </div>
-
-            <div class="cake-grid">
-
-                <article class="cake-card">
-                    <div class="cake-image chocolate">♡</div>
-                    <h3 data-i18n="cake-chocolate">Chocolate</h3>
-                    <p data-i18n="cake-chocolate-desc">
-                        Un clásico irresistible.
-                    </p>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image pineapple">♡</div>
-                    <h3 data-i18n="cake-pineapple">Piña</h3>
-                    <p data-i18n="cake-pineapple-desc">
-                        Un toque dulce y frutal.
-                    </p>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image cheesecake">♡</div>
-                    <h3 data-i18n="cake-cheesecake">Cheesecake</h3>
-                    <p data-i18n="cake-cheesecake-desc">
-                        Cremoso y delicioso.
-                    </p>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image yogurt">♡</div>
-                    <h3 data-i18n="cake-yogurt">Yogur</h3>
-                    <p data-i18n="cake-yogurt-desc">
-                        Un sabor suave y especial.
-                    </p>
-                </article>
-
-            </div>
-
-            <p class="note" data-i18n="flavor-note">
-                Sabores e imágenes por confirmar con Betty.
-            </p>
-
-        </section>
+        <div class="cake-info">
+          <h3 data-i18n="cheeseTitle">Cheesecake</h3>
+          <p data-i18n="cheeseText">Cremoso y delicioso.</p>
+          <span class="cake-detail" data-i18n="cakeDetail">
+            Hecho con cariño ♡
+          </span>
+        </div>
+      </article>
 
 
-        <!-- BIRTHDAY CAKES -->
-        <section class="birthday section">
+      <article class="cake-card">
+        <div class="cake-image">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+            alt="Postre cremoso"
+            loading="lazy"
+          >
+          <span class="cake-number">04</span>
+        </div>
 
-            <div class="birthday-decoration">✿</div>
+        <div class="cake-info">
+          <h3 data-i18n="yogurtTitle">Yogur</h3>
+          <p data-i18n="yogurtText">Suave y delicado.</p>
+          <span class="cake-detail" data-i18n="cakeDetail">
+            Hecho con cariño ♡
+          </span>
+        </div>
+      </article>
 
-            <p class="eyebrow" data-i18n="birthday-label">
-                MOMENTOS PARA CELEBRAR
-            </p>
+    </div>
 
-            <h2 data-i18n="birthday-title">
-                Cumpleaños llenos de dulzura
-            </h2>
+    <p class="disclaimer" data-i18n="flavorNote">
+      Fotografías ilustrativas. Los sabores están pendientes de confirmar.
+    </p>
 
-            <p data-i18n="birthday-description">
-                Una celebración especial merece una torta especial.
-                Hagamos que cada cumpleaños sea inolvidable.
-            </p>
-
-            <div class="birthday-image">
-                <span>♡</span>
-                <p>Foto de tortas de cumpleaños próximamente</p>
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT BETTY -->
-        <section class="about section" id="sobre-betty">
-
-            <div class="about-image">
-                <span>♡</span>
-                <p>Foto de Betty próximamente</p>
-            </div>
-
-            <div class="about-text">
-                <p class="eyebrow" data-i18n="about-label">
-                    CON CARIÑO
-                </p>
-
-                <h2 data-i18n="about-title">
-                    Conoce a Betty
-                </h2>
-
-                <p data-i18n="about-description">
-                    Detrás de cada torta hay una persona que pone
-                    dedicación y cariño en cada detalle.
-                </p>
-
-                <p data-i18n="about-note">
-                    Pronto compartiremos más sobre Betty y sus creaciones.
-                </p>
-            </div>
-
-        </section>
+  </section>
 
 
-        <!-- ORDER -->
-        <section class="order section" id="pedidos">
+  <!-- BIRTHDAY -->
+  <section class="birthday-section section" id="cumpleanos">
 
-            <p class="eyebrow" data-i18n="order-label">
-                ALGO DULCE TE ESPERA
-            </p>
+    <div class="birthday-image">
+      <img
+        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1000&q=85"
+        alt="Pastel de cumpleaños decorado"
+        loading="lazy"
+      >
+    </div>
 
-            <h2 data-i18n="order-title">
-                ¿Celebramos algo especial?
-            </h2>
+    <div class="birthday-content">
+      <span class="eyebrow" data-i18n="birthdayEyebrow">
+        MOMENTOS PARA CELEBRAR
+      </span>
 
-            <p data-i18n="order-description">
-                Estamos preparando toda la información
-                para que puedas conocer cómo hacer tu pedido.
-            </p>
+      <h2 data-i18n="birthdayTitle">
+        Cumpleaños llenos de dulzura
+      </h2>
 
-            <span class="coming-soon" data-i18n="coming-soon">
-                PRÓXIMAMENTE
-            </span>
+      <p data-i18n="birthdayText">
+        Los pequeños momentos merecen grandes sonrisas.
+        Una torta puede formar parte de un recuerdo inolvidable.
+      </p>
 
-        </section>
+      <a href="#contacto" class="button button-light"
+         data-i18n="birthdayButton">
+        Conoce más
+      </a>
+    </div>
 
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-        <p>BETTY<span>.</span> — Tortas Caseras</p>
-        <p data-i18n="footer-text">
-            Hechas con cariño para tus momentos especiales.
-        </p>
-        <small>© <span id="year">2026</span> BETTY</small>
-    </footer>
+  </section>
 
 
-    <script src="script.js"></script>
+  <!-- ABOUT -->
+  <section class="section about-section" id="betty">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
+        alt="Espacio de preparación de alimentos"
+        loading="lazy"
+      >
+      <span class="about-stamp">♡ Betty ♡</span>
+    </div>
+
+    <div class="about-content">
+      <span class="eyebrow" data-i18n="aboutEyebrow">
+        CON CARIÑO
+      </span>
+
+      <h2 data-i18n="aboutTitle">Conoce a Betty</h2>
+
+      <p data-i18n="aboutText">
+        Detrás de cada torta hay dedicación y cariño.
+        Muy pronto podrás conocer más sobre Betty y sus creaciones.
+      </p>
+
+      <span class="about-signature" data-i18n="aboutSignature">
+        Con cariño, Betty ♡
+      </span>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT PLACEHOLDER -->
+  <section class="contact-section section" id="contacto">
+
+    <span class="eyebrow" data-i18n="contactEyebrow">
+      UN MOMENTO DULCE TE ESPERA
+    </span>
+
+    <h2 data-i18n="contactTitle">
+      ¿Celebramos algo especial?
+    </h2>
+
+    <p data-i18n="contactText">
+      Pronto compartiremos más información sobre los pedidos.
+    </p>
+
+    <span class="coming-soon" data-i18n="comingSoon">
+      MÁS INFORMACIÓN PRÓXIMAMENTE
+    </span>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <a href="#inicio" class="footer-brand">
+    Betty<span>.</span>
+  </a>
+
+  <p data-i18n="footerText">
+    Un poquito de dulzura, un montón de amor.
+  </p>
+
+  <small>
+    © <span id="year"></span> Betty.
+    <span data-i18n="rights">Todos los derechos reservados.</span>
+  </small>
+
+  <p class="footer-note" data-i18n="footerNote">
+    Las fotografías son ilustrativas y no representan necesariamente los productos de Betty.
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
